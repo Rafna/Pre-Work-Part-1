@@ -42,27 +42,44 @@ h1 {
 /* Your CSS code goes here */
 .grid-container {
   display: grid;
-  grid: 30px 0px 170px 30px / auto;
-	margin-left: 30px;
-  font-color: #424242;
-  font-size: 0.65em;
+  grid: 50px 1px 200px 50px / auto;
+	margin-left: 20px;
+	font-family: Trebuchet MS, sans-serif;
+  color: #424242;
+  font-size: 0.75em;
   text-align: center;
 }
 .grid-top {
+	position: relative;
 	border: 2px solid #eaeaea;
 	border-radius: 2px;
-	width: 270px;
+	width: 265px;
 	padding: 5px;
-	margin-left: 275px;
-	margin-bottom: 5px;
+	margin: auto auto 5px 570px;
 	background-color: #424242;
 	color: white;
+}
+.grid-top:after {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-top: 0px solid #eaeaea;
+	border-left: 0px solid #eaeaea;
+	border-right: 2px solid #424242;
+	border-bottom: 2px solid #424242;
+	top: 100%;
+	left: 80%;
+	margin-left: 5px;
+	content: '';
+	transform: rotate(45deg);
+	margin-top: -5px;
+	background-color: #424242;
 }
 .grid-progress progress {
   -webkit-appearance: none;
   border: 2px solid #eaeaea;
-  width: 270px;
-  margin: 0em;
+  width: 265px;
+	margin: auto 2em auto 1.25em;
 }
 ::-webkit-progress-value {
   background-color: #EF5F3C;
@@ -73,9 +90,9 @@ h1 {
 .grid-main {
   border: 2px solid #eaeaea;
   padding: 10px;
-  padding-top: 10px;
-  margin: 1em auto;
-  max-width: 270px;
+  padding-top: 20px;
+  margin: 1px 5px 5px 572px;
+  max-width: 265px;
   text-align: left;
 }
 span.first {
@@ -96,8 +113,27 @@ span.number {
   padding: 10px;
   margin: 5px;
   width: 100px;
+	height: 40px;
   font-weight: bold;
+	border-radius: 2px;
+	border-width: 0;
 }
-p.last-line {
+.last-line {
   color: #20A1D4;
+	font-style: italic;
+}
+.grid-bottom {
+	text-align: center;
+	margin: 5px 250px;
+
+}
+.bottom-btn {
+	width: 125px;
+	height: 30px;
+	font-weight: bold;
+	background-color: white;
+	border: 2px solid #eaeaea;
+	border-radius: 2px;
+	margin-right: 10px;
+	font-family: Trebuchet MS, sans-serif;
 }
